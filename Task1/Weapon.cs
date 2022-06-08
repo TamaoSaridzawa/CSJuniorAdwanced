@@ -7,13 +7,9 @@
 
         public Weapon(Bullet bullet , int counteBullets)
         {
-            if (bullet != null)
+            if (bullet != null && counteBullets >= 0)
             {
-                _counteBullets = bullet;
-            }
-
-            if (counteBullets >= 0)
-            {
+                _bullet = bullet;
                 _counteBullets = counteBullets;
             }
         }
