@@ -5,6 +5,19 @@
         private Bullet _bullet;
         private int _counteBullets;
 
+        public Weapon(Bullet bullet , int counteBullets)
+        {
+            if (bullet != null)
+            {
+                _counteBullets = bullet;
+            }
+
+            if (counteBullets >= 0)
+            {
+                _counteBullets = counteBullets;
+            }
+        }
+
         public void Fire(Player player)
         {
             if (_counteBullets > 0)
